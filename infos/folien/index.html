@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Erste Infos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style>
+      body {
+        font-size: 2em;
+      }
+      h1, h2 {
+        margin-top: 4em;
+      }
+      img {
+        width: 100%;
+      }
+      hr {
+        border-color: #000;
+      }
+      .container {
+        margin-bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Links für den Einstieg...</h1>
+        <a href="https://de.wikipedia.org/wiki/PHP" target="_blank">Wikipedia: PHP</a><br>
+        <a href="https://de.wikipedia.org/wiki/LAMP_%28Softwarepaket%29" target="_blank">Wikipedia: LAMP</a><br>
+        <a href="https://de.wikipedia.org/wiki/Prozedurale_Programmierung" target="_blank">Wikipedia: Prozedurale Programmierung</a><br>
+        <a href="https://de.wikipedia.org/wiki/Objektorientierte_Programmierung" target="_blank">Wikipedia: Objektorientierte Programmierung</a><br><br>
+        <a href="http://php.net/manual/de/intro-whatis.php" target="_blank">Was ist PHP?</a><br><br>
+        <a href="http://php.net/manual/en/" target="_blank">Offizielle Doku/Referenz (en)</a><br>
+        <a href="http://php.net/manual/de/" target="_blank">Offizielle Doku/Referenz (de)</a><br><br>
+        <a href="https://www.w3schools.com/php/default.asp" target="_blank">w3schools: PHP Tutorial</a><br>
+        <a href="https://www.w3schools.com/php/php_ref_array.asp" target="_blank">w3schools: PHP Reference</a><br><br>
+        <a href="https://stackoverflow.com/" target="_blank">stackoverflow: es wurde schon (fast) alles gefragt...</a>
+      <h1>Varianten der Programmausführung: Compiler, Interpreter</h1>
+        <img src="img/programmiersprachen_compiling.png"><hr>
+        <img src="img/programmiersprachen_vm.png"><hr>
+        <img src="img/programmiersprachen_interpreter.png"><hr>
+        <p>"Ein Interpreter ist ein Computerprogramm, das einen Programm-Quellcode im Gegensatz zu Assemblern oder Compilern nicht in eine auf dem System direkt ausführbare Datei übersetzt, sondern den Quellcode einliest, analysiert und ausführt. Die Analyse des Quellcodes erfolgt also zur Laufzeit des Programmes." (Wikipedia)</p>
+        <p>In der Webprogrammierung sind Skriptsprachen (Programmcode der während der Laufzeit durch einen Interpreter ausgeführt wird [siehe 3. Folie]) sehr verbreitet. Sowohl server- als auch clientseitig.</p>
+        <p>Serverseitige Skriptsprachen sind bspw.: PHP, Perl, Python, etc. aber auch Javascript kann serverseitig eingesetzt werden (node.js).</p>
+        <p>Die klassische clientseitige Skriptsprache im WWW ist JavaScript (ECMAScript).</p>
+      <h1>Technische Grundlagen</h1>
+        <h2>Am Anfang war... HTTP und HTML</h2>
+          <ul>
+            <li>HTTP: Hypertext Transfer Protocol</li>
+            <li>HTML: Hypertext Markup Language</li>
+          </ul>
+          <p>"Die weltweit erste Webseite info.cern.ch wurde am 6. August 1991 veröffentlicht." - <a href="https://de.wikipedia.org/wiki/World_Wide_Web" target="_blank">Wikipedia - Word Wide Web</a>; Nachbildung dieser Seite: <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">http://info.cern.ch/hypertext/WWW/TheProject.html</a></p>
+          <p>Während das Übertragungsprotokoll (HTTP) bis heute prinzipiell auf die selbe Weise funktioniert, sind die Entwicklungen der Technologien von Server und Client (Browser) rasant vorangeschritten.</p>
+        <h2>Client-Server-Modell / HTTP</h2>
+          <img src="img/clientserver.png"><hr>
+          <p>Man spricht hier häufig in diesem Kontext auch von "Frontend" und "Backend".</p>
+          <p>Da wir mit PHP serverseitig arbeiten, brauchen wir für die Entwicklung einen Webserver und einen PHP-Interpreter (verbreitet: LAMP-Architektur oder Abwandlungen) - unser Programmcode wird auf dem Webserver durch das PHP-Modul interpretiert. Jede serverseitige Skriptsprache wird durch einen Interpreter am Webserver interpretiert - der Browser "sieht" in diesem Fall nur die Ausgabe des PHP-Skripts (bspw. eine HTML-Datei), aber nicht den Programmcode selbst.</p>
+          <p>Zum Vergleich: bei clientseitigen Sprachen, wie etwa JavaScript ist unser Interpreter im Browser selbst integriert - der Programmcode ist für den Client (meist Browser) sichtbar.</p>
+          <img src="img/clientserver_web.jpg"><hr>
+          <img src="img/http.png"><hr>
+        <h2>Webserver: statische Seiten</h2>
+          <p>Hier macht der Webserver nichts anderes, als statische Files liefern: HTML/CSS/JS-Interpretation übernimmt schließlich der Browser. Daher kann man rein statische Seiten auch ohne Webserver lokal ausführen.</p>
+          <img src="img/html.png"><hr>
+          <img src="img/http_telnet.png"><hr>
+        <h2>Webserver: dynamische Seiten (serverseitig)</h2>
+          <p>Hier übernimmt der Webserver weitere Aufgaben: er liefert nicht nur statisches HTML, CSS und JS, sondern erzeugt dynamisch einen Code. Bspw. durch PHP: eine serverseitige Skriptsprache, die Code (HTML, XML, Mediendateien) dynamisch erzeugt.</p>
+          <img src="img/php1.png"><hr>
+          <img src="img/php2.png"><hr>
+        <h2>Technologien Client</h2>
+          <img src="img/client.png"><hr>
+        <h2>Technologien Server</h2>
+          <img src="img/server.png"><hr>
+          <p><span class="glyphicon glyphicon-pencil"></span> Übung: WAMP installieren; Hello-World-PHP-Skript erstellen</p>
+      <h1>Arbeitsweise</h1>
+        <ul>
+          <li>Die tatsächliche Programmierung ist nur ein Teil des Tätigkeitsfeldes</li>
+          <li>"Programmieren ist nichts anderes als das systematische Lösen von Problemen"</li>
+          <li>Daher wird vor der eigentlichen Programmierung zuerst eine sorgfältige Analyse durchgeführt, beispielsweise:
+            <ul>
+              <li>Anforderungen (Software, Webserver, Domain, etc.)</li>
+              <li>Umsetzbarkeit, potentielle Problemfelder</li>
+              <li>Erstellung eines Software-Designs (Projekt in Teilprobleme zerlegen)</li>
+              <li>Lösungsstrategien der Teilprobleme erarbeiten (modularer Aufbau, Einsatz von Frameworks andenken, etc.)</li>
+              <li>ggf. Erstellung des Datenbank-Designs</li>
+            </ul>
+          </li>
+          <li>Webentwicklung bedeutet daher immer auch viel Recherchearbeit (es gibt viele Möglichkeiten einer Umsetzung)</li>
+          <li>Erst nach einer Analyse, beginnt der eigentliche Entwicklungsprozess</li>
+          <li>Testing und Bugfixing: wird oft unterschätzt...</li>
+          <li>Testing wird bei größeren Projekten manchmal auch ausgelagert - Berufsfeld "Software-Tester"</li>
+          <li>Bugfixing: Problem eingrenzen, lokalisieren, ggf. isolieren. Auch hier primär Recherche (jedes Problem gab es schon mal)</li>
+        </ul>
+      <h1>Arbeitsumgebung</h1>
+        <ul>
+          <li>Editoren und Tools</li>
+          <li>Browser (mit Entwicklerwerkzeuge)</li>
+          <li>Für Backend-Entwicklung: lokaler Webserver (LAMP/WAMP) und Umgebung oder Entwicklungsserver</li>
+          <li>Versionsverwaltung (bspw. git)</li>
+        </ul>
+      <h1>Programmierparadigma: Prozedurale/Strukturierte Programmierung</h1>
+        <p>Es gibt eine Reihe von Programmierparadigmen, die oft voneinander auch gar nicht abgrenzbar sind. PHP unterstützt verschiedenste Paradigmen - seit Version 5 wurde der Fokus auf die Möglichkeiten der objektorientierten Programmierung deutlich gestärkt. Zum Einstieg werden wir jedoch den klassischen Ansatz wählen: die prozedurale Programmierung, die weniger abstrakt ist.</p>
+        <p>Wir beschreiben nur eine Art zu Programmieren, das heißt eine Art von Problemlösungsverfahren.</p>
+        <p>Es bedeutet: Zerlegung eines Programms in Teilprogramme, Prozeduren (also etwa Funktionen). Das Gesamtproblem zerlegen wir in Teilprobleme und erstellen jeweils Lösungen.</p>
+        <p>Zur grafischen Darstellung von Programmabläufen gibt es unterschiedliche Varianten:</p>
+        <h3>Struktogramm:</h3>
+        <img src="img/struktogramm1.png" style="width: 45%; float: left;">
+        <pre>
+if (bedingung1) {
+  if (bedingung2) {
+    // Anweisungsblock 1
+  }
+  else {
+    // Anweisungsblock 2
+  }
+}
+else {
+  // Anweisungsblock 3
+}
+        </pre>
+        <hr style="clear: left;">
+        <img src="img/struktogramm2.png" style="width: 45%; float: left;">
+        <pre>
+while (a > 0 && b > 0) {
+  if (a > b) {
+    a = a - b;
+  }
+  else {
+    b = b - a;
+  }
+}
+if (b == 0) {
+  // Ausgabe a
+}
+else {
+  // Ausgabe b
+}
+        </pre>
+        <hr style="clear: left;">
+        <h3>Flussdiagramm (älter):</h3>
+        <img src="img/flussdiagramm.png" style="width: 40%;">
+        <p>Hier sind einfache Programmabläufe grafisch dargestellt; geht es nicht um die Darstellung, wird in der Praxis aber häuftig so genanner kommentierter "Pseudocode" stattdessen verwendet, der während der Programmierung schon als Platzhalter positioniert werden kann.</p>
+        <img src="img/pseudocode.png"><hr>
+    </div>
+  </body>
+</html>

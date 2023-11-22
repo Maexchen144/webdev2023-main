@@ -1,0 +1,25 @@
+* XAMPP
+1. Download xampp: https://www.apachefriends.org/de/index.html
+2. Open control panel
+2a. Open "settings / config / httpd.conf"
+2b. Suche in httpd.conf nach "DocumentRoot" und gib das gewünschte Arbeitsverzeichnis ein
+    DocumentRoot "C:\Users\username\web"
+    <Directory "C:\Users\username\web">
+2c. Restart Apache im control panel
+2d. teste: http://localhost/
+
+Falls keine PHP-Fehlermeldungen angezeigt werden, sondern nur ein weißer Bildschirm:
+1. XAMPP Control panel "settings / config / php.ini"
+2. suche nach, und setze:
+error_reporting=E_ALL
+display_errors=On
+3. restart Apache
+
+* GIT
+Kursunterlagen liegen hier: https://gitlab.com/bananenfisch/webdev2023
+Variante 1: einfach dort runterladen...
+Variante 2:
+1. Install git: https://git-scm.com/downloads
+2. VS Code: <ctrl> + <shift> + p -> Befehlpalette: suche "clone"
+2a. clone URL: https://gitlab.com/bananenfisch/webdev2022.git - Verzeichnis auswählen: Arbeitsverzeichnis (DocumentRoot)
+3. Updaten: links unten auf das "Rädchen" klicken

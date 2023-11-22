@@ -1,0 +1,73 @@
+* PHP
+https://www.php.net/
+https://www.w3schools.com/php/default.asp
+https://www.w3schools.com/php/php_ref_overview.asp
+
+* xdebug:
+https://xdebug.org/download (php-version passend die TS variante)
+in php.ini einfügen (am ende):
+zend_extension=C:/path/to/xdebug.dll
+xdebug.mode = debug
+xdebug.start_with_request = yes
+Restart Apache
+
+* Error Reporting:
+https://phpdelusions.net/articles/error_reporting
+
+https://www.w3resource.com/php-exercises/
+https://www.php-einfach.de/
+
+File Upload: https://www.w3schools.com/php/php_file_upload.asp (ist Mist!)
+Besser: https://www.php.net/manual/en/features.file-upload.post-method.php
+
+Speziell DB/SQL, usw.: https://phpdelusions.net/
+
+* Coding Standards / Recommendations
+https://www.php-fig.org/psr/
+
+* phpDOC
+https://github.com/php-fig/fig-standards/blob/master/proposed/phpdoc.md
+https://www.doxygen.nl/download.html
+https://www.graphviz.org/download/
+
+* clean code
+https://github.com/jupeter/clean-code-php
+
+Alles ist ein Ausdruck: https://www.php.net/manual/de/language.expressions.php
+
+* SQL
+SQL vs noSQL: https://www.ibm.com/cloud/blog/sql-vs-nosql
+MariaDB Referenz: https://mariadb.com/kb/en/sql-statements/
+Tutorial: https://www.w3schools.com/sql/default.asp
+Referenzen:
+SQL: https://www.w3schools.com/sql/sql_ref_keywords.asp
+MYSQL/MariaDB: https://www.w3schools.com/sql/sql_ref_mysql.asp
+
+https://severalnines.com/blog/understanding-indexes-mysql-part-one/
+
+DB-Normalisierung:
+alle 3 Normalformen: https://www.youtube.com/watch?v=Hn6qyRkbPqI
+1. NF: https://www.youtube.com/watch?v=sFG5pR5016k
+2. NF: https://www.youtube.com/watch?v=kAuZ-v-HBtA
+3. NF: https://www.youtube.com/watch?v=x183UkdsPQ8
+
+* OOP
+https://www.php.net/manual/de/language.oop5.php
+https://www.w3schools.com/php/php_oop_what_is.asp (ist nicht immer auf dem neuesten stand)
+https://www.php-einfach.de/experte/objektorientierte-programmierung-oop/ (ist nicht immer auf dem neuesten stand)
+https://de.wikipedia.org/wiki/Objektorientierte_Programmierung
+https://www.inztitut.de/blog/glossar/objektorientierte-programmierung/
+
+* "KI" Code Completion
+https://www.tabnine.com/
+https://github.com/features/copilot
+
+Kritik: https://www.youtube.com/watch?v=b9u3ZAGQmT0
+
+https://en.wikipedia.org/wiki/OpenAI_Codex
+https://en.wikipedia.org/wiki/GitHub_Copilot
+https://www.tabnine.com/tabnine-vs-github-copilot-x
+
+https://beta.openai.com/playground
+-> Bei Model: "code-davinci-002"
+Zum Probieren: https://chat.openai.com/chat
