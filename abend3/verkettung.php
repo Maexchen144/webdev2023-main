@@ -7,12 +7,11 @@
 </head>
 <body>
     <?php
-    $count = 1;
-    while ($count <= 5) {
-        echo "$count. Schleifendurchlauf!<br>";
-        // $count = $count + 1;
-        $count++;
-    }
+        $x = 4;
+        echo "$x Äpfel!";
+
+        $year = 2023;
+        echo 'Das nächste Jahr ist ' . $year+1 . "... und übrigens heuer ist $year";
     ?>
 </body>
 </html>

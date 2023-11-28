@@ -7,12 +7,12 @@
 </head>
 <body>
     <?php
-    $count = 1;
-    while ($count <= 5) {
-        echo "$count. Schleifendurchlauf!<br>";
-        // $count = $count + 1;
-        $count++;
+
+    $counter = 0;
+    while ($counter < 10) {
+        echo ++$counter . ' Durchlauf.<br>';
     }
+
     ?>
 </body>
 </html>

@@ -7,11 +7,12 @@
 </head>
 <body>
     <?php
-    $count = 1;
-    while ($count <= 5) {
-        echo "$count. Schleifendurchlauf!<br>";
-        // $count = $count + 1;
-        $count++;
+    // https://www.php.net/manual/de/types.comparisons.php
+    $count = 5;
+    if ($count) {
+        echo "$count Produkte sind im Warenkorb!<br>";
+    } else {
+        echo "Ihr Warenkorb ist leer!";
     }
     ?>
 </body>
