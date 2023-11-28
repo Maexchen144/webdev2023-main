@@ -1,0 +1,27 @@
+* XDEBUG unter Windows:
+siehe: https://www.youtube.com/watch?v=HrQWtbxY1Hs
+Wichtig: Video ab Minute 1:36!
+Wichtig: nur bis Minute 3:30 (alles danach ist nicht notwendig)
+
+* XDEBUG unter Mac:
+Mit XAMPP leider sehr umständlich - geht theoretisch, aber einfacher vermutlich MAMP!
+1. XAMPP muss man nicht löschen, solang man noch nicht sicher ist, ob man bei MAMP bleibt.
+2. im XAMPP Control Panel aber den Apache und MySQL auf "stop"
+3. Mamp installieren: https://www.youtube.com/watch?v=NqaZ2yqpA4E oder https://www.youtube.com/watch?v=VMfJ5qLzmU8
+4. Wichtig hier: im Finder "MAMP" und nicht "MAMP PRO" ausführen (Pro müsste man kaufen).
+5. Auch wichtig: falls http://localhost/ nicht funktioniert, dann http://localhost:8888/ probieren (den Port können wir aber noch einstellen)
+6. Document Root: siehe Videos - am einfachsten eine Verknüpfung dorthin legen und als Arbeitsverzeichnis nutzen.
+Wenn alles geht:
+Siehe: https://joshbuchea.com/mac-enable-xdebug-in-mamp/
+Wichtig hier aber in der php.ini:
+Die Zeile mit "zend_extension" aktivieren (den ; davor löschen)
+Zusätzliche Zeilen nur diese einfügen (falls nicht vorhanden):
+xdebug.mode=debug
+xdebug.start_with_request=yes
+MAMP Server stop/start und dann mit Extension testen.
+
+* Extension für MS Code für Win/Mac:
+Wieder: https://www.youtube.com/watch?v=HrQWtbxY1Hs
+Wichtig: Video ab Minute 5:30 - nur bis Minute 5:45 nötig.
+
+Fertig (hoffentlich ;))!
