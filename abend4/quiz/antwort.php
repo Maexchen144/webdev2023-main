@@ -13,17 +13,23 @@
             // Wenn nicht: Ausgabe: Antwort nicht korrekt
         // Wenn nicht: Fehlermeldung
 
-        if (count($_POST) > 0) {
-            if (isset($_POST['antwort2'])) {
-                if ($_POST['antwort2'] === 'on') {
-                    echo 'Richtig!';
-                }
+        if (count($_POST) > 0)
+        {
+            if (isset($_POST['antwort2']) && $_POST['antwort2'] === 'on')
+            {
+                echo 'Richtig!';
+            }
+            else
+            {
+                echo 'Falsch!';
             }
 
             // Wenn ja: 2. Prüfe, ob die richtige Antwort "antwort2" enthalten ist mit der value "richtig"
                 // Wenn ja: Ausgabe: korrekt
             // Wenn nicht: Ausgabe: Antwort nicht korrekt
-        } else {
+        }
+        else
+        {
             echo 'Bitte wählen Sie eine Antwort!';
         }
     ?>

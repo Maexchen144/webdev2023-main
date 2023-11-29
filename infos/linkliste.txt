@@ -3,6 +3,9 @@ https://www.php.net/
 https://www.w3schools.com/php/default.asp
 https://www.w3schools.com/php/php_ref_overview.asp
 
+PSR (php standard Recommendations):
+https://www.php-fig.org/psr/
+
 Alles ist ein Ausdruck: https://www.php.net/manual/de/language.expressions.php
 
 * xdebug:
