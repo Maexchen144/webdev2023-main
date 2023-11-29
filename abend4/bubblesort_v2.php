@@ -1,10 +1,10 @@
 <?php
-$arr = [ 16, 6, 8, 2, 1, 12, 3, 5, 10 ];
-$arr = [ 6, 8, 2, 1, 12, 3, 5, 10, 16 ]; // nach 1. durchlauf
-$arr = [ 6, 2, 1, 8, 3, 5, 10, 12, 16 ]; // nach 2. durchlauf
-$arr = [ 1, 2, 3, 5, 6, 8, 10, 12, 16 ];
+$arr = [ 16, 6, 8, 2 ];
+// $arr = [ 6, 8, 2, 16 ]; // nach 1. durchlauf
 
 // zuerst nur innere schleife erläutern! denke von innen nach außen!
+
+var_dump( count($arr) );
 
 /*
 lese anzahl der elemente im array
