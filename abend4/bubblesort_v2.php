@@ -15,6 +15,8 @@ while ($counter < $count-1) {
     $counter++;
 }
 
+var_dump($arr);
+
 /*
 $count = count([ 16, 6, 8, 2 ]); // ergibt 4
 $counter = 0;
