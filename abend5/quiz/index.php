@@ -1,19 +1,9 @@
 <?php
 require 'inc/config.php';
+require 'inc/data.php';
 include 'templates/header.php';
 ?>
         <h1>Willkommen auf unserer <?= APPNAME ?> Applikation</h1>
-
-        <?php
-        $question = 'Was ist ein gültiger Variablenname in PHP?';
-        $answers = [
-            '$txt_user_1',
-            '$TxtUser1',
-            'txt_user_1',
-            '$txt.user.1'
-        ];
-        $correct = [ 0, 1 ];
-        ?>
 
         <p>Frage 1</p>
         <p><?= $question ?></p>
@@ -35,6 +25,11 @@ include 'templates/header.php';
             <?php
             }
             ?>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
         </form>
 <?php
 include 'templates/footer.php';
