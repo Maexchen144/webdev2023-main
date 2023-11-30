@@ -13,9 +13,9 @@
             // Wenn nicht: Ausgabe: Antwort nicht korrekt
         // Wenn nicht: Fehlermeldung
 
-        if (count($_POST) > 0)
+        if ( count($_POST) > 0 )
         {
-            if (isset($_POST['antwort2']) && $_POST['antwort2'] === 'on')
+            if ( isset( $_POST['antwort2'] ) && $_POST['antwort2'] === 'on' )
             {
                 echo 'Richtig!';
             }
