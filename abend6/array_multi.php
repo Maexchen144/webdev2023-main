@@ -23,3 +23,24 @@ $produkte[] = [
 var_dump($produkte);
 
 echo $produkte[2]['anzahl'];
+
+// Analog dazu - wäre das selbe:
+$produkte = [
+[
+    'name'   => 'Bohrmaschine',
+    'preis'  => 99.9,
+    'anzahl' => 30
+],
+
+[
+    'name'   => 'Waschmaschine',
+    'preis'  => 399.9,
+    'anzahl' => 10
+],
+
+[
+    'name'   => 'Geschirrspüler',
+    'preis'  => 599.9,
+    'anzahl' => 16
+]
+];
